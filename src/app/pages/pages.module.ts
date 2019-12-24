@@ -5,6 +5,7 @@ import { TagsComponent } from './tags/tags.component';
 import { PostsComponent } from './posts/posts.component';
 import { PagesComponent } from "./pages.component";
 import { SharedModule } from "../shared/shared.module";
+import { PAGES_ROUTES } from "./pages.routes";
 
 @NgModule({
     declarations:[
@@ -22,7 +23,8 @@ import { SharedModule } from "../shared/shared.module";
         PostsComponent,
     ],
     imports:[
-        SharedModule
+        SharedModule,
+        PAGES_ROUTES
     ]
 })
 export class PagesModule{}
