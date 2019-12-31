@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { APP_ROUTES } from './app-routing.module';
 
@@ -23,6 +24,7 @@ import { ServiceModule } from './services/service.module';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
+    HttpClientModule,
     ServiceModule
     //AppRoutingModule
   ],

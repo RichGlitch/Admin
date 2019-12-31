@@ -6,6 +6,7 @@ import { PostsComponent } from './posts/posts.component';
 import { PagesComponent } from "./pages.component";
 import { SharedModule } from "../shared/shared.module";
 import { PAGES_ROUTES } from "./pages.routes";
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations:[
@@ -24,7 +25,8 @@ import { PAGES_ROUTES } from "./pages.routes";
     ],
     imports:[
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        CommonModule
     ]
 })
 export class PagesModule{}
